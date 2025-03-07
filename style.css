@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue4: #0d1b2af4;
+    --blue3: #1B263B;
+    --blue2: #415A77;
+    --blue1: #778DA9;
+    --lightcolor: #E0E1DD;
+    --whiteColor : white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--blue3);
+}
+
+
+.container {
+    background-color: var(--lightcolor);
+    color: var(--blue4);
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 45vh;
+    min-width: 25vw;
+    max-width: 70vw;
+}
+
+.container h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+form {
+    margin: 2rem 0 1rem 0;
+}
+
+form select,
+button,
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+    background-color: var(--whiteColor);
+}
+
+.amount,.from,.to p{
+    font-weight: 600;
+    font-size: 1.15rem;
+}
+
+form input {
+    border: 1px solid var(--lightcolor);
+    height: 2.5rem;
+    font-size: 1.09rem;
+    padding-left: 0.6rem;
+    margin-top: 0.2rem;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.7rem;
+    margin: 1.2rem;
+}
+
+.dropdown i {
+    margin-top: 1.5rem;
+}
+
+.selectContainer img {
+    max-width: 2.2rem;
+}
+
+.selectContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--blue1);
+    border-radius: 0.75rem;
+    padding: 0.3rem;
+    width: 6rem;
+    margin-top: 0.2rem;
+}
+
+
+.selectContainer select {
+    width: auto;
+    background-color: var(--lightcolor);
+    font-size: 1rem;
+    color: var(--blue4);
+    font-weight: 500;
+}
+
+
+.selectContainer option {
+    background-color: var(--blue4);
+    color: var(--lightcolor);
+}
+
+.message {
+    margin: 2rem 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--blue4);
+    max-width: 25rem;
+}
+
+form button {
+    height: 2.5rem;
+    background-color: var(--blue3);
+    color: var(--lightcolor);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+button,.selectContainer,select{
+    cursor: pointer;
+}
+
+button:hover {
+    --blue3 : #253148;
+    background-color: var(--blue3);
+}
